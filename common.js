@@ -1,5 +1,5 @@
 props: {
-  title: "潜水艦用ツール",
+  "潜水艦用ツール": String,
   //likes: Number,
   //isPublished: false,
   //commentIds: Array,
