@@ -1,0 +1,129 @@
+
+
+UTF-8
+ 
+LF
+    
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+
+<title>ボイジャー　パーツ組み合わせ</title>
+<meta charset="utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+
+</head>
+<body>
+<h1>ボイジャー　パーツ組み合わせ</h1>
+<p>Tonight I swapped some of the songs I wrote with some friends, who
+gave me some of the songs they wrote. I love sharing my music.</p>
+
+<table class="table01">
+	<tbody>
+		<tr>
+			<td>選択</td>  <td>部位</td>  <td>コスト</td> <td>探査</td> <td>収集</td> <td>巡航</td> <td>航続</td> <td>運</td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input id="radio1" type="radio" name="r" /><label for="radio1"></label></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+
+<div id="draggable" style = "width: 150px; height: 150px; padding: 0.5em;" class="ui-widget-content">
+ <p>ドラッグしてください</p>
+</div>
+
+<input type="radio" name="num1" id="a1" value="1" >
+<label for="a1">1</label>
+<br>
+<input type="radio" name="num1" id="a2" value="2" >
+<label for="a2">2</label>
+<br>
+<input type="radio" name="num1" id="a3" value="3" >
+<label for="a3">3</label>
+
+<script type="text/javascript">
+	// #draggableをドラッグできるようにする。
+	$(function () {
+		$("#draggable").draggable();
+	});
+
+  $('.table01 tr').each(function(i) {
+    if(i != 0) {
+        $(this).prepend('<td>'+ i +'</td>'); 
+    } else {
+        $(this).prepend('<th>id</th>'); 
+    }
+});
+
+</script>
+
+
+
+</body>
+</html>
